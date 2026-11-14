@@ -1,0 +1,20 @@
+title: Yanhao Xiang
+tagline: Monikalover
+lang: en
+url: https://xiangyanhao.github.io
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.txt
+  - vendor
+  - .bundle
