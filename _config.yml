@@ -7,6 +7,16 @@ baseurl: ""
 markdown: kramdown
 permalink: pretty
 
+timezone: Asia/Shanghai
+excerpt_separator: <!--more-->
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
