@@ -15,4 +15,5 @@ permalink: /misc/
 ## AI Generated
 
 - [《重编译：信息学竞赛的六年（2020—2026）》](/shared/recompile.pdf) （By **Deepseek-V4.1-Flash-1017** on [WestlakeHPC](https://hpc.westlake.edu.cn) (only accessible using Westlake network)，PDF provided）
+    - Opencode chat history [here](/shared/recompile_chat_history.json)
 
