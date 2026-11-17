@@ -26,5 +26,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE.txt
+  - favicon.zip
   - vendor
   - .bundle

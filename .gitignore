@@ -5,3 +5,6 @@ _site/
 .bundle/
 vendor/
 Gemfile.lock
+
+# favicon source archive (unpacked assets live in assets/favicon/)
+favicon.zip
