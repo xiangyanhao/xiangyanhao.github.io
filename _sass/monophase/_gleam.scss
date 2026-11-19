@@ -1,0 +1,68 @@
+/**
+ * Gleam highlighting
+ *
+ * Rouge has no Gleam lexer, so Gleam code blocks are not wrapped in a
+ * `.highlight` container and carry no token spans. The block shell is styled
+ * here and the tokens are produced by `assets/js/gleam-highlight.js`.
+ */
+
+pre:has(> code.language-gleam) {
+  border-radius: var(--border-radius);
+  background-color: var(--code-bg-color);
+}
+
+code.language-gleam {
+  // Light mode, matching the "github" Rouge theme in _highlight-light.scss
+  --gleam-comment: #999988;
+  --gleam-keyword: #000000;
+  --gleam-string: #dd1144;
+  --gleam-number: #009999;
+  --gleam-type: #445588;
+  --gleam-function: #990000;
+  --gleam-attribute: #008080;
+
+  .tok-comment {
+    color: var(--gleam-comment);
+    font-style: italic;
+  }
+
+  .tok-keyword {
+    color: var(--gleam-keyword);
+    font-weight: bold;
+  }
+
+  .tok-string {
+    color: var(--gleam-string);
+  }
+
+  .tok-number {
+    color: var(--gleam-number);
+  }
+
+  .tok-type {
+    color: var(--gleam-type);
+    font-weight: bold;
+  }
+
+  .tok-function {
+    color: var(--gleam-function);
+    font-weight: bold;
+  }
+
+  .tok-attribute {
+    color: var(--gleam-attribute);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  code.language-gleam {
+    // Dark mode, matching the "gruvbox" Rouge theme in _highlight-dark.scss
+    --gleam-comment: #928374;
+    --gleam-keyword: #fb4934;
+    --gleam-string: #b8bb26;
+    --gleam-number: #d3869b;
+    --gleam-type: #8ec07c;
+    --gleam-function: #fabd2f;
+    --gleam-attribute: #b8bb26;
+  }
+}
